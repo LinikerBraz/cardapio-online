@@ -4,7 +4,7 @@ export const produtos = [
         nome: "Café Expresso",
         categoria: "bebidas",
         preco: 5.00,
-        imagem: "../../public/img1.jpeg",
+        imagem: "/img1.jpeg",
         descricao:"Bebida clássica feita com grãos de café moídos na hora.",
         ingredientes: ['café']
     },
@@ -14,7 +14,7 @@ export const produtos = [
         nome: "Cappuccino",
         categoria: "bebidas",
         preco: 8.00,
-        imagem: "../../public/img1.jpeg",
+        imagem: "/img1.jpeg",
         descricao:"bebida feita com café expresso, leite vaporizado e espuma de leite.",
         ingredientes: ['Café', 'Leite', 'Canela' ]
     },
@@ -24,7 +24,7 @@ export const produtos = [
         nome: "Bolo de Chocolate",
         categoria: "sobremessas",
         preco: 12.00,
-        imagem: "../../public/img2.jpeg",
+        imagem: "/img2.jpeg",
         descricao:"Bolo fofinho de chocolate com cobertura cremosa.",
         ingredientes:['chocolate', 'farinha', 'açúcar', 'ovos' ]
     },
@@ -33,7 +33,7 @@ export const produtos = [
         nome: "Cookie",
         categoria: "sobremessas",
         preco: 6.00,
-        imagem: "../../public/img2.jpeg",
+        imagem: "/img2.jpeg",
         descricao: "cookie crocante com gotas de chocolate.",
         ingredientes: ['farinha', 'açúcar', 'manteiga', 'gotas de chocolate' ]
     },
@@ -43,7 +43,7 @@ export const produtos = [
         nome: "Sanduíche Natural",
         categoria: "comida",
         preco: 10.00,
-        imagem: "../../public/img3.jpeg",
+        imagem: "/img3.jpeg",
         descricao: "Sanduíche leve com pão integral, peito de peru, alface e tomate.",
         ingredintes: ['pão integral', 'peito de peru', 'alface', 'tomate' ]
     },
@@ -53,7 +53,7 @@ export const produtos = [
         nome: "Misto  Quente",
         categoria: "comida",
         preco: 9.00,
-        imagem: "../../public/img3.jpeg",
+        imagem: "/img3.jpeg",
         descricao: "misto quente clássico com presunto e queijo derretido.",
         ingredientes: ['pão', 'presunto', 'queijo' ]
     }
