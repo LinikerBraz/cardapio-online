@@ -1,6 +1,7 @@
 import React from "react";
 import { produtos } from "../../dados/dados";
 import { ItemCard } from "../itemcard";
+import "./ItemGrid.css";
 
 export function ItemGrid({ categoriaSelecionada }) {
 const produtosFiltrados = produtos.filter(
