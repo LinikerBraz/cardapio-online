@@ -6,7 +6,7 @@ export function Header() {
         <div className="container">
         {/* Logo + Nome */}
         <a href="#inicio" className="logo-link">
-            <img src="/public/123.png" alt="Logo Cafeteria MP" className="logo-img" />
+            <img src="/123.png" alt="Logo Cafeteria MP" className="logo-img" />
             <span className="logo-text">Cafeteria MP</span>
         </a>
 
