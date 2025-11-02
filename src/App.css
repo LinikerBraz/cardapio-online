@@ -1,0 +1,21 @@
+:root {
+--espacamento-secao: 40px;
+}
+
+.carrossel-container {
+margin-top: var(--espacamento-secao);
+}
+
+.carousel-img {
+height: 420px;            /* altura ideal para desktop */
+object-fit: contain;      /* exibe a imagem inteira */
+object-position: center;  /* centraliza a imagem */
+background-color: #000;   /* fundo neutro para bordas */
+border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+.carousel-img {
+height: 260px;          /* altura ajustada para celular */
+}
+}

@@ -1,0 +1,29 @@
+.item-card {
+border: none;
+border-radius: 16px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+overflow: hidden;
+background-color: #fff;
+}
+
+.item-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.image-container {
+width: 100%;
+height: 200px;
+overflow: hidden;
+}
+
+.image-container img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.preco {
+color: #b35d16; /* tom de café */
+font-size: 1.1rem;
+}

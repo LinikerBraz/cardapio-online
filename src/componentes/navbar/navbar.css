@@ -1,0 +1,179 @@
+/* ========================================
+    🍂 PALETA DE CORES - CAFETERIA ELEGANTE
+   ======================================== */
+:root {
+/* Fundo e texto geral */
+  --cor-fundo: #faf6f2;           /* creme suave - fundo do body */
+  --cor-texto: #3d2b1f;           /* marrom café escuro - texto principal */
+
+  /* Botões */
+  --cor-botao: #d4a574;           /* caramelo dourado - padrão */
+  --cor-botao-hover: #c5895b;     /* caramelo tostado - hover */
+  --cor-botao-ativo: #a67344;     /* café forte - ativo/clicado */
+
+  /* Links */
+  --cor-link: #5d4037;            /* marrom suave - links */
+  --cor-link-hover: #8d6e63;      /* marrom acinzentado - hover */
+
+  /* Destaques */
+  --cor-destaque: #ffb74d;        /* laranja dourado - hover no título, ícones */
+
+  /* Texto dos botões */
+  --cor-texto-botao: #fffaf0;     /* branco quente */   /* branco quente - texto dos botões */
+}
+
+/* ========================================
+    🌿 ESTILO GLOBAL
+   ======================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* ========================================
+    ☕ TÍTULO PRINCIPAL
+   ======================================== */
+h2 {
+    margin: 16px 0;
+    font-size: 2.8rem;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--cor-texto);
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+h2:hover {
+    color: var(--cor-titulo-hover);
+}
+
+/* ========================================
+    🔗 NAVBAR & LINKS
+   ======================================== */
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 24px 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--cor-link);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efeito sutil de sublinhado ao passar o mouse */
+.nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--cor-link-hover);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav a:hover {
+    color: var(--cor-link-hover);
+}
+
+.nav a:hover::after {
+    width: 60%;
+}
+
+/* ========================================
+    🫖 BOTÃO PERSONALIZADO
+   ======================================== */
+.btn-style {
+    background-color: var(--cor-botao);
+    color: var(--cor-texto-botao);
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    display: inline-block;
+    margin: 8px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 12px rgba(201, 123, 61, 0.2);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efeito de onda suave no clique */
+.btn-style::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+    z-index: 0;
+}
+
+.btn-style:active::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* Hover com leve elevação */
+.btn-style:hover {
+    background-color: var(--cor-botao-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(168, 93, 46, 0.3);
+}
+
+/* Estado ativo (clicado ou selecionado) */
+.btn-style.active,
+.btn-style:active {
+    background-color: var(--cor-botao-ativo);
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(135, 77, 42, 0.4);
+}
+
+/* ========================================
+    🚫 REMOVER AZUL PADRÃO DO FOCO
+   ======================================== */
+.btn-style:focus,
+.nav a:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(201, 123, 61, 0.4);
+    color: inherit !important;
+}
+
+/* Garante que links não fiquem azuis em nenhum estado */
+a,
+a:visited,
+a:active,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+}
