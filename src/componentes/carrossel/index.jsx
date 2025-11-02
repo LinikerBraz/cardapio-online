@@ -14,7 +14,7 @@ return (
     {/* Slides */}
     <div className="carousel-inner">
     <div className="carousel-item active">
-        <img src="/public/img1.jpeg" className="d-block w-100 carrossel-img" alt="Café especial" />
+        <img src="../../../public/img1.jpeg" className="d-block w-100 carrossel-img" alt="Café especial" />
         <div className="carousel-caption d-none d-md-block">
         <h3>O sabor que desperta o seu dia ☕</h3>
         <p>Cafés moídos na hora com grãos selecionados.</p>
@@ -22,7 +22,7 @@ return (
     </div>
 
     <div className="carousel-item">
-        <img src="/public/img2.jpeg" className="d-block w-100 carrossel-img" alt="Doces artesanais" />
+        <img src="../../../public/img2.jpeg" className="d-block w-100 carrossel-img" alt="Doces artesanais" />
         <div className="carousel-caption d-none d-md-block">
         <h3>Doces artesanais incríveis 🍰</h3>
         <p>Feitos com amor para adoçar seus momentos.</p>
@@ -30,7 +30,7 @@ return (
     </div>
 
     <div className="carousel-item">
-        <img src="/public/img3.jpeg" className="d-block w-100 carrossel-img" alt="Ambiente aconchegante" />
+        <img src="../../../public/img3.jpeg" className="d-block w-100 carrossel-img" alt="Ambiente aconchegante" />
         <div className="carousel-caption d-none d-md-block">
         <h3>Um espaço pra você relaxar ☕</h3>
         <p>Ambiente acolhedor, wi-fi e música boa.</p>
