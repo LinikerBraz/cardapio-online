@@ -1,0 +1,85 @@
+/* ========================================
+🍂 LOGIN - CAFETERIA ELEGANTE
+======================================== */
+
+.login {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+background: var(--cor-fundo);
+color: var(--cor-texto);
+
+padding: 24px;
+}
+
+/* Caixa do login */
+.login {
+gap: 16px;
+}
+
+/* Título */
+.login_titulo {
+font-size: 28px;
+margin-bottom: 12px;
+color: var(--cor-texto);
+text-align: center;
+}
+
+/* Inputs */
+.login input {
+width: 100%;
+max-width: 320px;
+
+padding: 12px 14px;
+font-size: 16px;
+
+border-radius: 6px;
+border: 1px solid #ddd;
+
+outline: none;
+transition: border 0.2s ease;
+}
+
+.login input:focus {
+border-color: var(--cor-destaque);
+}
+
+/* Botão */
+.botao_login {
+width: 100%;
+max-width: 320px;
+
+padding: 12px;
+margin-top: 8px;
+
+background: var(--cor-botao);
+color: var(--cor-texto-botao);
+
+border: none;
+border-radius: 6px;
+
+font-size: 16px;
+font-weight: 600;
+
+cursor: pointer;
+transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.botao_login:hover {
+background: var(--cor-botao-hover);
+}
+
+.botao_login:active {
+background: var(--cor-botao-ativo);
+transform: scale(0.98);
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+.login_titulo {
+font-size: 24px;
+}
+}
